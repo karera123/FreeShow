@@ -90,6 +90,8 @@
     <span class="underline" />
 
     <div class="remove">
+        <slot name="buttons" />
+
         {#if autofill}
             <MaterialButton on:click={() => updateValue(autofill)} title="meta.autofill" white>
                 <Icon id="autofill" white />
